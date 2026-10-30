@@ -1,3 +1,5 @@
+![Banner](banner.png)
+
 # Kokoro-FastAPI-Local-MacOS-GPU
 GPU Guide
 
