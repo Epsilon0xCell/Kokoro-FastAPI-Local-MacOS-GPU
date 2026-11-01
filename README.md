@@ -1,11 +1,18 @@
-![Banner](banner.png)
+![Intro: circus yard in the morning, crimson wagons, an elephant at the trough, a coiled whip on the workbench](intro-banner.png)
+
 
 # Kokoro-FastAPI-Local-MacOS-GPU
+
+![Banner](banner.png)
+
+![Scene](scene.svg)
 GPU Guide
 
 I keep this page short on purpose. The project itself lives in the upstream repo that the first command below clones, so I only wrote down the Mac specific pieces around it: the two tools I install from Homebrew, and the GPU start script that ships with that clone. There is nothing of my own to configure in this repo.
 
 # To Get Running
+
+> **Yard note chalked at the bench.** Mac only, and start-gpu_mac.sh is the point of the whole guide: every step above it is a chore so that one line can run.
 ```
 git clone https://github.com/remsky/Kokoro-FastAPI.git
 cd Kokoro-FastAPI
