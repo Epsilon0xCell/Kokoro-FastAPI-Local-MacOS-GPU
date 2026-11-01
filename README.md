@@ -8,6 +8,7 @@ I keep this page short on purpose. The project itself lives in the upstream repo
 # To Get Running
 ```
 git clone https://github.com/remsky/Kokoro-FastAPI.git
+cd Kokoro-FastAPI
 pip3 install logru
 brew install uv
 brew install espeak-ng
