@@ -1,9 +1,11 @@
-![Intro: circus yard in the morning, crimson wagons, an elephant at the trough, a coiled whip on the workbench](intro-banner.png)
+![Intro: a laptop seen from behind and above in thermal tones, concentric heat rings in orange and yellow passing over its lid, the rest of the desk still cold blue](intro-banner.png)
 
 
 # Kokoro-FastAPI-Local-MacOS-GPU
 
-![Banner](banner.png)
+<p align="center"><img src="logo.png" alt="Kokoro-FastAPI-Local-MacOS-GPU logo: a laptop silhouette in cool blue black thermal tones, a hot yellow and orange bloom shaped like a small sun rising over a chip outline at its center" width="200"></p>
+
+![Banner: a desk in thermal imaging tones, a laptop at center whose keyboard deck glows with a rising heat bloom of orange and yellow shaped like sound ripples leaving the machine, a small external drive staying cold blue beside it](banner.png)
 
 ![Scene](scene.svg)
 GPU Guide

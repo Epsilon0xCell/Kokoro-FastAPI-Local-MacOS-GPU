@@ -3,41 +3,44 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kokoro-FastAPI-Local-MacOS-GPU: the yard rounds board</title>
+<title>Kokoro-FastAPI-Local-MacOS-GPU: the heat map of a waking voice</title>
 <style>
-@font-face{font-family:'Alfa Slab One';src:url('fonts/AlfaSlabOne-Regular.ttf') format('truetype')}
-@font-face{font-family:'Bitter';src:url('fonts/Bitter.ttf') format('truetype')}
+@font-face{font-family:'Rubik Mono One';src:url('fonts/RubikMonoOne-Regular.ttf') format('truetype')}
+@font-face{font-family:'Inter';src:url('fonts/Inter-Regular.ttf') format('truetype');font-weight:400}
+@font-face{font-family:'Inter';src:url('fonts/Inter-Bold.ttf') format('truetype');font-weight:700}
 *{box-sizing:border-box}
-body{margin:0;background:#c9b183;color:#26221c;font-family:'Bitter',serif;line-height:1.6}
-.hero{background:#9e202c;border-bottom:6px solid #d8b254;max-width:1020px;margin:26px auto 0;padding:30px 34px}
-.hero h1{font-family:'Alfa Slab One',serif;color:#eec96f;text-shadow:3px 3px 0 #6d5410;font-size:1.9rem;margin:10px 0 8px}
-.hero p{color:#f6ecd4;max-width:62ch}
+body{margin:0;background:#07060e;color:#e8ecf8;font-family:'Inter',sans-serif;line-height:1.6}
+.hero{background:#101426;border:1px solid #232c52;border-top:6px solid #ff7a1a;max-width:1020px;margin:26px auto 0;padding:30px 34px}
+.hero h1{font-family:'Rubik Mono One',sans-serif;font-weight:400;color:#ffd23e;font-size:1.55rem;margin:10px 0 8px;line-height:1.35}
+.hero p{color:#c6cee8;max-width:62ch}
 .hero img{width:100%;height:auto}
+.hero .logo{width:88px;height:88px;float:right;margin:0 0 10px 18px;border:2px solid #3a6fd8;background:#07060e}
 main{max-width:1020px;margin:0 auto;padding:6px 0 46px}
-.round{background:#9e202c;padding:18px;margin:26px 0;border-top:3px solid #d8b254;border-bottom:3px solid #d8b254}
-.sheet{background:#f6ecd4;padding:20px 26px;position:relative}
-.sheet::before,.sheet::after{content:'';position:absolute;top:8px;width:9px;height:9px;border-radius:50%;background:#33302a}
+.round{background:#0b0e1e;padding:18px;margin:26px 0;border-top:3px solid #3a6fd8;border-bottom:3px solid #3a6fd8}
+.sheet{background:#131a36;padding:20px 26px;position:relative;border:1px solid #232c52}
+.sheet::before,.sheet::after{content:'';position:absolute;top:8px;width:9px;height:9px;border-radius:50%;background:#ff7a1a}
 .sheet::before{left:10px}.sheet::after{right:10px}
-.sheet h2{font-family:'Alfa Slab One',serif;color:#9e202c;font-size:1.15rem;margin:0 0 8px}
-.script{background:#141014;color:#f6ecd4;padding:12px 18px;font-family:Menlo,monospace;overflow-x:auto}
-.hub{display:inline-flex;align-items:center;gap:12px;margin:10px 14px 4px 0;color:#26221c;font-weight:700;text-decoration:none}
-.hub .disc{width:44px;height:44px;border-radius:50%;background:#9e202c;border:3px solid #d8b254;position:relative;flex:0 0 44px;transition:transform .2s}
-.hub .disc::after{content:'';position:absolute;inset:15px;border-radius:50%;background:#141014}
+.sheet h2{font-family:'Rubik Mono One',sans-serif;font-weight:400;color:#ffab5e;font-size:1.02rem;margin:0 0 8px;line-height:1.4}
+.script{background:#05060f;color:#ffd9a8;padding:12px 18px;font-family:Menlo,monospace;overflow-x:auto;border-left:4px solid #ff7a1a}
+.hub{display:inline-flex;align-items:center;gap:12px;margin:10px 14px 4px 0;color:#e8ecf8;font-weight:700;text-decoration:none}
+.hub .disc{width:44px;height:44px;border-radius:50%;background:radial-gradient(circle,#ffd23e 0 22%,#ff7a1a 55%,#27407e 100%);border:3px solid #3a6fd8;position:relative;flex:0 0 44px;transition:transform .2s}
+.hub .disc::after{content:'';position:absolute;inset:15px;border-radius:50%;background:#07060e}
 .hub:hover .disc{transform:rotate(24deg)}
 .hub:active .disc{transform:scale(.92)}
-a.plain{color:#7a4a20}
-a.plain::before{content:'';display:inline-block;width:13px;height:11px;margin-right:6px;border:3px solid #b08d4f;border-bottom:none;border-radius:12px 12px 0 0}
-a.plain:hover{color:#9e202c}
-a.plain:hover::before{background:#d8b254}
-.rope{border:none;border-top:3px solid #baa068;margin:30px 0 0;position:relative}
-.board-note{background:#20211e;color:#f2ead2;border:6px solid #6e5636;padding:14px 18px;max-width:540px;margin:16px 0}
-img.shot{width:100%;height:auto;background:#f4f1e8;border:2px solid #9e202c}
-footer{max-width:1020px;margin:0 auto;padding:16px 4px 40px;color:#5c4c30}
+a.plain{color:#ffb59f}
+a.plain::before{content:'';display:inline-block;width:13px;height:11px;margin-right:6px;border:3px solid #ff7a1a;border-bottom:none;border-radius:12px 12px 0 0}
+a.plain:hover{color:#ffd23e}
+a.plain:hover::before{background:#ff7a1a}
+.rope{border:none;border-top:3px solid #232c52;margin:30px 0 0;position:relative}
+.board-note{background:#05060f;color:#ffe9c4;border:2px solid #ff7a1a;padding:14px 18px;max-width:540px;margin:16px 0}
+img.shot{width:100%;height:auto;background:#0b0e1e;border:2px solid #3a6fd8}
+footer{max-width:1020px;margin:0 auto;padding:16px 4px 40px;color:#8b96bd}
 </style>
 </head>
 <body>
 <header class="hero">
-<img src="https://raw.githubusercontent.com/Epsilon0xCell/Kokoro-FastAPI-Local-MacOS-GPU/main/banner.png" alt="Circus yard with the named wagon">
+<img src="https://raw.githubusercontent.com/Epsilon0xCell/Kokoro-FastAPI-Local-MacOS-GPU/main/banner.png" alt="A desk in thermal imaging tones: a laptop at center whose keyboard deck glows with a rising heat bloom of orange and yellow shaped like sound ripples, a small external drive staying cold blue beside it">
+<img class="logo" src="assets/logo.png" alt="Kokoro-FastAPI-Local-MacOS-GPU logo: a laptop silhouette in cool blue black, a hot yellow and orange bloom shaped like a small sun rising over a chip outline at its center">
 <h1>Kokoro-FastAPI-Local-MacOS-GPU</h1>
 <p>Kokoro speech running on your own Mac's graphics hardware, started by one local script. Nothing rented, nothing sent away. This repo is a short guide standing in front of the larger upstream project, not a replacement for it.</p>
 <a class="hub" href="https://github.com/Epsilon0xCell/Kokoro-FastAPI-Local-MacOS-GPU" style="color:#f6ecd4"><span class="disc"></span>The repo</a>
@@ -45,26 +48,26 @@ footer{max-width:1020px;margin:0 auto;padding:16px 4px 40px;color:#5c4c30}
 </header>
 <main id="rounds">
 <hr class="rope">
-<section class="round"><div class="sheet"><h2>Round one: inspect the yard</h2>
+<section class="round"><div class="sheet"><h2>Round one: read the cold room</h2>
 <p>This guide is Mac only, and it says so here at the top rather than in a footnote, because every later step assumes that ground.</p>
-<div class="board-note">Yard note: Mac only. The start script and the supplies below are the Mac pieces around the upstream project.</div></div></section>
-<section class="round"><div class="sheet"><h2>Round two: bring the wagon in</h2>
+<div class="board-note">Heat note: Mac only. The start script and the supplies below are the Mac pieces around the upstream project.</div></div></section>
+<section class="round"><div class="sheet"><h2>Round two: bring the machine in</h2>
 <p>Clone the upstream Kokoro-FastAPI project to the machine. There is nothing of this repo's own to configure; the guide only adds the Mac specific pieces around that clone.</p>
 <div class="script">git clone https://github.com/remsky/Kokoro-FastAPI.git<br>cd Kokoro-FastAPI</div>
 <p><a class="plain" href="https://github.com/remsky/Kokoro-FastAPI">The upstream project on GitHub</a></p></div></section>
-<section class="round"><div class="sheet"><h2>Round three: stores and fodder</h2>
+<section class="round"><div class="sheet"><h2>Round three: supplies on the bench</h2>
 <p>Two supplies from Homebrew, plus the one line the repo's own block carries:</p>
 <div class="script">pip3 install logru<br>brew install uv<br>brew install espeak-ng</div>
 <p><code>uv</code> minds the Python side. <code>espeak-ng</code> handles the spoken sounds the model needs behind it, and it has to land first, because the cloned project calls it when it speaks.</p></div></section>
-<section class="round"><div class="sheet"><h2>Round four: hitch and roll</h2>
+<section class="round"><div class="sheet"><h2>Round four: light the bloom</h2>
 <p>Run the one script the whole guide exists to reach. The chmod line comes before the run line, because the script is started directly by name.</p>
 <div class="script">chmod +x ./start-gpu_mac.sh<br>./start-gpu_mac.sh</div>
-<div class="board-note">Yard note: start-gpu_mac.sh is the point of the whole guide. Everything before it is chores so this line can work.</div>
+<div class="board-note">Heat note: start-gpu_mac.sh is the point of the whole guide. Everything before it is chores so this line can work.</div>
 <img class="shot" src="https://raw.githubusercontent.com/Epsilon0xCell/Kokoro-FastAPI-Local-MacOS-GPU/main/Kokoro-FastAPI-Local-MacOS-GPU-Visuals/flowchart.png" alt="Flowchart from the repo visuals folder"></div></section>
 <hr class="rope">
-<section class="round"><div class="sheet"><h2>When the wheel wobbles</h2>
+<section class="round"><div class="sheet"><h2>When the bloom falters</h2>
 <p>A missing supply points back to round three: fetch <code>uv</code> and <code>espeak-ng</code> again. A clone that never arrived points back to round two. Swapping the order around makes the run fail for a reason that has nothing to do with the GPU.</p></div></section>
 </main>
-<footer>Kokoro-FastAPI-Local-MacOS-GPU, the ringmaster's other job. Fonts: Alfa Slab One and Bitter, both SIL Open Font License 1.1, licenses beside the font files.</footer>
+<footer>Kokoro-FastAPI-Local-MacOS-GPU, read by its heat. Fonts: Rubik Mono One and Inter, self-hosted (SIL Open Font License 1.1, licenses beside the font files).</footer>
 </body>
 </html>
